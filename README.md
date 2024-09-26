@@ -15,12 +15,23 @@ List of participants and affiliations:
 
 
 
-## Project Goals
+## What is E-Guard (ESKAPE Pathogen Guard)?
 
-This project aims to develop a machine learning model for rapid identification of ESKAPE pathogens, enhancing diagnostic capabilities and informing treatment strategies. The model will be trained on genomic, phenotypic, and clinical data to improve accuracy and sensitivity.
+
+Our project aims to develop a machine learning model for the rapid and accurate detection of ESKAPE pathogens, notorious for their antimicrobial resistance. The model is trained on genomic, phenotypic, and clinical datasets to improve diagnostic precision. By employing advanced feature extraction techniques and a scalable pipeline, we aim to streamline the identification of critical pathogens, contributing to better healthcare outcomes in the fight against antimicrobial resistance.
+ESKAPE-specific genomes were sourced using BigQuery on Google Cloud. To avoid gene overrepresentation, guided assemblies were scrubbed, retaining only de novo assemblies. We generated two feature categories: sequence and annotation features. Sequence features include genomic markers like % GC content and protein features such as single amino acid and dipeptide counts. Annotation features were extracted using tools like PROKKA and MUMmer, focusing on gene annotations, pathway enrichment, and SNP-based clustering.
 
 Keywords: ESKAPE pathogens, Machine learning, Genomic data, Phenotypic data, Clinical data, Model development, Diagnostic tool, public health
 
+## Installation
+
+Instructions for setting up the environment, installing dependencies, and running the project are provided in Install.txt
+
+## Project structure
+
+/genome: reference dataset
+/feature_gen_lib: Scripts for feature extraction
+/FEATURE-GEN: Training and testing data 
 
 
 ## Approach
